@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: mysql-service
   namespace: database
+  labels:
+    app: mysql
 spec:
   type: ClusterIP
   ports:
